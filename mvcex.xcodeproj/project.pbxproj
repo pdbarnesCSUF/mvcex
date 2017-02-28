@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		638711A41E65300F0018DFD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638711A31E65300F0018DFD2 /* AppDelegate.swift */; };
-		638711A61E65300F0018DFD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638711A51E65300F0018DFD2 /* ViewController.swift */; };
 		638711A91E6530100018DFD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638711A71E6530100018DFD2 /* Main.storyboard */; };
 		638711AB1E6530100018DFD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638711AA1E6530100018DFD2 /* Assets.xcassets */; };
 		638711AE1E6530100018DFD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638711AC1E6530100018DFD2 /* LaunchScreen.storyboard */; };
+		638711B61E6530600018DFD2 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638711B51E6530600018DFD2 /* CalculatorViewController.swift */; };
+		638711B81E6530720018DFD2 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638711B71E6530720018DFD2 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		638711A01E65300F0018DFD2 /* mvcex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvcex.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		638711A31E65300F0018DFD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		638711A51E65300F0018DFD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		638711A81E6530100018DFD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		638711AA1E6530100018DFD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		638711AD1E6530100018DFD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		638711AF1E6530100018DFD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		638711B51E6530600018DFD2 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		638711B71E6530720018DFD2 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +54,12 @@
 		638711A21E65300F0018DFD2 /* mvcex */ = {
 			isa = PBXGroup;
 			children = (
-				638711A31E65300F0018DFD2 /* AppDelegate.swift */,
-				638711A51E65300F0018DFD2 /* ViewController.swift */,
 				638711A71E6530100018DFD2 /* Main.storyboard */,
 				638711AA1E6530100018DFD2 /* Assets.xcassets */,
 				638711AC1E6530100018DFD2 /* LaunchScreen.storyboard */,
 				638711AF1E6530100018DFD2 /* Info.plist */,
+				638711B51E6530600018DFD2 /* CalculatorViewController.swift */,
+				638711B71E6530720018DFD2 /* ResultsViewController.swift */,
 			);
 			path = mvcex;
 			sourceTree = "<group>";
@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					6387119F1E65300F0018DFD2 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,8 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				638711A61E65300F0018DFD2 /* ViewController.swift in Sources */,
-				638711A41E65300F0018DFD2 /* AppDelegate.swift in Sources */,
+				638711B61E6530600018DFD2 /* CalculatorViewController.swift in Sources */,
+				638711B81E6530720018DFD2 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,10 +261,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = mvcex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pt.mvcex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -272,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = mvcex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pt.mvcex;
