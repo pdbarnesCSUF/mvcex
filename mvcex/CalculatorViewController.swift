@@ -31,7 +31,7 @@ class CalculatorViewController: UIViewController {
 //swipe function
     func handleSwipe(_ sender:UIGestureRecognizer)
     {
-        
+        self.performSegue(withIdentifier: "showResults", sender: self)
     }
 
 }
