@@ -39,6 +39,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Calculator" id="NUd-dl-NIH"/>
+                    <connections>
+                        <segue destination="BoA-uE-efq" kind="show" id="1nh-vK-at4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5TU-gg-Gnh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
