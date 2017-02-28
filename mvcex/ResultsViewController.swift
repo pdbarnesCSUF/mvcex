@@ -14,6 +14,12 @@ class ResultsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //MARK: Make swipe gestures
+        let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target:self, action: #selector(handleSwipe))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
+        view.addGestureRecognizer(swipeRight)
+        //handleswipe is a function below
+        //#selector() selects and executes that function
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +27,13 @@ class ResultsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //swipe function
+    func handleSwipe(_ sender:UIGestureRecognizer)
+    {
+        self.performSegue(withIdentifier: "unwindToCalc", sender: self)
     }
-    */
+    
+    //unwinding to calc
+    //this is betcause it will keep adding to the top of the "stack" of where we are. like dir/../dir/../dir/.. and so on
 
 }

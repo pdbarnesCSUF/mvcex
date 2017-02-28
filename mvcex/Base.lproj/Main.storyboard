@@ -61,8 +61,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="mLC-qK-JCK"/>
+                    <connections>
+                        <segue destination="xAY-Fv-AXd" kind="unwind" identifier="unwindToCalc" unwindAction="unwindToCalcWithSegue:" id="H9h-Va-kou"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hRo-O6-yqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="xAY-Fv-AXd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="791" y="45"/>
         </scene>

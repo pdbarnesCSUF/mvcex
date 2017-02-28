@@ -34,4 +34,9 @@ class CalculatorViewController: UIViewController {
         self.performSegue(withIdentifier: "showResults", sender: self)
     }
 
+    //enable unwinding other views
+    @IBAction func unwindToCalc(segue:UIStoryboardSegue)
+    {
+        
+    }
 }
