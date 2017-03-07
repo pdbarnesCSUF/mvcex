@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		633DD9DA1E65411D008E69A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633DD9D91E65411D008E69A4 /* AppDelegate.swift */; };
+		6376219E1E6E6195004F718C /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6376219D1E6E6195004F718C /* GraphView.swift */; };
 		638711A91E6530100018DFD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638711A71E6530100018DFD2 /* Main.storyboard */; };
 		638711AB1E6530100018DFD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638711AA1E6530100018DFD2 /* Assets.xcassets */; };
 		638711AE1E6530100018DFD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638711AC1E6530100018DFD2 /* LaunchScreen.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		633DD9D91E65411D008E69A4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6376219D1E6E6195004F718C /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		638711A01E65300F0018DFD2 /* mvcex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvcex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		638711A81E6530100018DFD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		638711AA1E6530100018DFD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				633DD9D91E65411D008E69A4 /* AppDelegate.swift */,
 				638711A71E6530100018DFD2 /* Main.storyboard */,
+				6376219D1E6E6195004F718C /* GraphView.swift */,
 				638711AA1E6530100018DFD2 /* Assets.xcassets */,
 				638711AC1E6530100018DFD2 /* LaunchScreen.storyboard */,
 				638711AF1E6530100018DFD2 /* Info.plist */,
@@ -143,6 +146,7 @@
 				633DD9DA1E65411D008E69A4 /* AppDelegate.swift in Sources */,
 				638711B61E6530600018DFD2 /* CalculatorViewController.swift in Sources */,
 				638711B81E6530720018DFD2 /* ResultsViewController.swift in Sources */,
+				6376219E1E6E6195004F718C /* GraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
