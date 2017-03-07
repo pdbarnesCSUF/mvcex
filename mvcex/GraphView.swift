@@ -8,6 +8,22 @@
 
 import UIKit
 
+//modifys the class, changes for entire app
+extension CGContext {
+    //want hexinput
+    func setFillColor(_ hex:Int) {
+        //mask different values of hex code
+        // 0xFF0000 - RED
+        // 0x00FF00 - GREEN
+        // 0x0000FF - BLUE
+        
+        let redColor:CGFloat = CGFloat((hex >> 16) & 0xFF) / 255.0//0xFF may be redundant?
+        let greenColor:CGFloat = CGFloat((hex >> 8) & 0xFF) / 255.0
+        let blueColor:CGFloat = CGFloat(hex & 0xFF) / 255.0
+        self.setFillColor(red: redColor, green: greenColor, blue: blueColor, alpha: 1.0)
+    }
+}
+
 class GraphView: UIView {
 
     //let CalcData: DiscountCalc = DiscountCalc.shared
