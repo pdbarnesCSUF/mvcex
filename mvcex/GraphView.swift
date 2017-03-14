@@ -20,7 +20,7 @@ extension CGContext {
         let redColor:CGFloat = CGFloat((hex >> 16) & 0xFF) / 255.0//0xFF may be redundant?
         let greenColor:CGFloat = CGFloat((hex >> 8) & 0xFF) / 255.0
         let blueColor:CGFloat = CGFloat(hex & 0xFF) / 255.0
-        self.setFillColor(red: redColor, green: greenColor, blue: blueColor, alpha: 1.0)
+        setFillColor(red: redColor, green: greenColor, blue: blueColor, alpha: 1.0)
     }
 }
 
@@ -42,7 +42,8 @@ class GraphView: UIView {
         let topGuide:CGFloat = 64.0 + paddingGuide //80
         let bottomGuide:CGFloat = screenHeight - paddingGuide
             
-        context.setFillColor(red: 0.0, green: 1.0, blue: 0.5, alpha: 1.0)
+        //context.setFillColor(red: 0.0, green: 1.0, blue: 0.5, alpha: 1.0)
+        context.setFillColor(0xFC3593)
         
         //these values are all in pts not px
         //draw rect
